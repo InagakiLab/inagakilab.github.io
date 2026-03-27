@@ -230,7 +230,7 @@ main {
 
 /* news */
 #news {
-    margin: 0px 40px;
+    padding: 0px -50px;
     background-color: #eaffec;
 }
 
@@ -238,7 +238,7 @@ main {
 .newsList {
   max-height: 220px;      /* 5件分くらい */
   overflow-y: scroll; /* スクロールを表示 */
-  padding: 0 20px;
+  padding: 0;
   margin: 0;
   list-style: none;
 }
