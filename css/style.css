@@ -231,11 +231,12 @@ main {
 /* news */
 #news {
     padding: 30px 30px;
+    margin: 20px 0px;
     background-color: #f5fff6;
 }
 
 #news h2 {
-    margin-bottom: 20px;
+    margin-bottom: 0px 0px 20px 0px;
     padding: 0px;
     text-align: center;
 }
@@ -284,6 +285,10 @@ main {
   flex: 1;
   line-height: 1.6;
   word-break: break-word;
+}
+
+#contact {
+    margin: 20px 0px;
 }
 
 #contact h2{
