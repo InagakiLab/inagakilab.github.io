@@ -166,11 +166,15 @@ main {
 }
 
 #mainImage {
-  width: 100%;
+  width: 100vw;           /* 画面幅いっぱい */
   height: auto;
-  margin: 0 calc(50% - 50vw);
-}
+  display: block;
 
+  /* 親要素の中央から左右にはみ出す */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 .pageBodyHead {
     position: relative;
