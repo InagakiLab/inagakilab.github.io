@@ -166,7 +166,8 @@ main {
 }
 
 .mainImage {
-  width: 100vw;
+  width: 100%;
+  height: auto;
   margin: 0 calc(50% - 50vw);
 }
 
