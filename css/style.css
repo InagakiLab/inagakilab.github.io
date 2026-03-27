@@ -222,19 +222,15 @@ main {
   display: block;
   width: 200px;
   margin: 20px auto;
-
   padding: 12px 0;
   text-align: center;
-
-  border: 1px solid #ccc;
-  background: #fff;
-  color: #333;
-
-  transition: 0.2s;
+  font-size: 20px;
+  background: #eb6100;
+  color: #ffffff;
 }
 
 .btn:hover {
-  background: #f5f5f5;
+  background: #ffa260;
 }
 
 
