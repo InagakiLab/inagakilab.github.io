@@ -269,7 +269,7 @@ main {
 /* --- 各行 --- */
 .newsListItem {
   display: flex;
-  gap: 12px;
+  gap: 15px;
   padding: 8px 0;
   border-bottom: 1px solid #b9b9b9;
 }
@@ -301,6 +301,7 @@ main {
 .newsDate {
   flex-shrink: 0;
   width: 100px;
+  text-align: center;
   color: #666;
   align-self: center;
 }
