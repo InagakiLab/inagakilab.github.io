@@ -231,13 +231,13 @@ main {
 /* news */
 #news {
     padding: 30px 30px;
-    background-color: #eaffec;
+    background-color: #f5fff6;
 }
 
 #news h2 {
-    margin: 0px;
+    margin-bottom: 20px;
     padding: 0px;
-    align-items: center;
+    text-align: center;
 }
 
 /* --- リスト --- */
@@ -264,7 +264,7 @@ main {
   width: 60px;
   text-align: center;
   font-size: 0.8rem;
-  color: #f0f0f0;
+  color: #ffffff;
   background: #ff3939;
   padding: 2px 6px;
   border-radius: 4px;
@@ -284,6 +284,12 @@ main {
   flex: 1;
   line-height: 1.6;
   word-break: break-word;
+}
+
+#contact h2{
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
 }
 
 
