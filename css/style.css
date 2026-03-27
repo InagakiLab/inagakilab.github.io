@@ -165,7 +165,7 @@ main {
     background-color: #ffffff;
 }
 
-.mainImage {
+#mainImage {
   width: 100%;
   height: auto;
   margin: 0 calc(50% - 50vw);
