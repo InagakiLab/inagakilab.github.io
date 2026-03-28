@@ -78,6 +78,23 @@ figcaption {
     justify-content: flex-end;
 }
 
+#pageHead .headerTop .instaLink {
+    width: 60px;
+    margin: 0 auto;
+}
+
+#pageHead .headerTop .jpButton {
+    width: 40px;
+    margin: 0 auto;
+    columns: #ffffff;
+    background-color: var(--main-color);
+}
+
+#pageHead .headerTop .enButton {
+    width: 40px;
+    margin: 0 auto;
+}
+
 /* グローバルナビ */
 #pageHead .globalNavi {
     padding: 0px;
