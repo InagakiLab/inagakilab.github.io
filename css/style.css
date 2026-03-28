@@ -2,6 +2,7 @@
 
 :root {
   --main-color: #08a000;
+  --main-color-light: #08a00020; /* 透明度20% */
 }
 
 body {
@@ -243,7 +244,7 @@ main {
 }
 
 .btn:hover {
-  background: rgba(var(--main-color), 0.2);
+  background: var(--main-color-light);
   color: #ffffff;
 }
 
@@ -259,7 +260,7 @@ main {
 #news {
     padding: 30px 30px;
     margin: 30px 0px;
-    background-color: rgba(var(--main-color), 0.2);
+    background-color: var(--main-color-light);
 }
 
 #news h2 {
