@@ -73,9 +73,8 @@ figcaption {
     align-items: flex-end;
 }
 
-#pageHead #header {
+#pageHead .headerTop {
     display: flex;
-    width: 350px;
 }
 
 /* グローバルナビ */
