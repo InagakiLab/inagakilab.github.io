@@ -85,6 +85,9 @@ figcaption {
     margin: auto;
 }
 
+#pageHead .headerTop .instaLink .instaIcon {
+    display: block;
+}
 
 #pageHead .headerTop .jpButton {
     width: 40px;
@@ -98,6 +101,8 @@ figcaption {
     width: 40px;
     margin: 2.5px auto 2.5px 0;
     text-align: center;
+    color: var(--main-color);
+    background-color: #ffffff;
 }
 
 /* グローバルナビ */
