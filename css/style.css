@@ -74,7 +74,7 @@ figcaption {
 }
 
 #pageHead .headerTop {
-    width: 200px;
+    width: 150px;
     margin: 0 0 0 auto;
     display: flex;
     align-items: center; /* アイコンとボタンを縦方向の中央に揃える */
