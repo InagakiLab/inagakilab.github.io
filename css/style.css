@@ -637,7 +637,7 @@ main {
   .newsListItem {
     flex-direction: column;
     gap: 5px;
-    align-items: flex-start; /* 左揃え */
+    text-align: left;
   }
   
   .newsMeta {
