@@ -600,7 +600,7 @@ main {
     top: 80px;
     right: 0;
     width: 100%;
-    background: #ffffffee;
+    background: #f8f8f8ee;
     border-top: 1px solid #ccc;
   }
 
@@ -611,12 +611,14 @@ main {
 
   .globalNavi {
     width: 100%;
+    padding-bottom: 10px;
     display: flex;
     justify-content: center; /* ナビ全体を中央へ */
   }
 
   /* ナビ縦並び */
   .globalNavi ul {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
