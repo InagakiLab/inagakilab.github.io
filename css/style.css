@@ -557,3 +557,33 @@ main {
   padding: 0;
   margin: -1px;
 }
+
+/* ===== スマホ対応 ===== */
+@media screen and (max-width: 768px) {
+
+  #pageBody {
+    width: 90%;
+  }
+
+  #pageHead .inner {
+    flex-direction: column;
+  }
+
+  #pageHead .globalNavi ul {
+    flex-direction: column;
+  }
+
+  #pageHead .globalNavi ul li {
+    width: 100%;
+    float: none;
+  }
+
+  .newsListItem {
+    flex-direction: column;
+  }
+
+  .memberList {
+    flex-direction: column;
+  }
+
+}
