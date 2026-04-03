@@ -1,10 +1,12 @@
 ---
+lang : ja
 layout: default
 title: Home
+description: 京都大学 大学院理学研究科 生物科学専攻 稲垣研究室のホームページです。稲垣宗一教授が主催しています。植物を用いてDNAメチル化やヒストン修飾などのエピゲノム制御機構を研究しています。
 ---
 
 <div id="pageBody">
-    <img src="images/epi_lab_design_2.jpg" id="mainImage">
+    <img src="{{ '/images/epi_lab_design_2.jpg' | relative_url }}" id="mainImage" alt="稲垣研究室の研究内容（植物+エピゲノム）を表現したイラスト">
 
     <div class="mainMessage">
         <h2>エピゲノムから生命システムの成り立ちと多様化のしくみに迫る</h2>
@@ -25,30 +27,40 @@ title: Home
         <ul class="newsList">
             <!-- 記事はここから -->
             <li class="newsListItem">
-                <span class="newsIcon01">更　新</span>
-                <time class="newsDate" datetime="2026-04-01">2026.04.01</time>
+                <div class="newsMeta">
+                    <span class="newsIcon01">更　新</span>
+                    <time class="newsDate" datetime="2026-04-01">2026.04.01</time>
+                </div>
                 <p class="newsContent">京都大学理学研究科生物科学専攻に研究室が移動しました。</p>
             </li>
             <!-- / 記事はここまで -->
             <li class="newsListItem">
-                <span class="newsIcon01">更　新</span>
-                <time class="newsDate" datetime="2026-03-31">2026.03.31</time>
+                <div class="newsMeta">
+                    <span class="newsIcon01">更　新</span>
+                    <time class="newsDate" datetime="2026-03-31">2026.03.31</time>
+                </div>
                 <p class="newsContent">研究室HPを開設しました。ホームのイラストは小泉さんが作画してくれました。</p>
             </li>
             <li class="newsListItem">
-                <span class="newsIcon02">論　文</span>
-                <time class="newsDate" datetime="2026-02-16">2026.02.16</time>
-                <p class="newsContent">星野さんの論文がGenes to Cells誌に掲載されました。</p>
+                <div class="newsMeta">
+                    <span class="newsIcon02">論　文</span>
+                    <time class="newsDate" datetime="2026-02-16">2026.02.16</time>
+                </div>
+                <p class="newsContent">星野さんの論文が<em>Genes to Cells</em>誌に掲載されました。</p>
             </li>
             <li class="newsListItem">
-                <span class="newsIcon02">論　文</span>
-                <time class="newsDate" datetime="2026-01-05">2026.01.05</time>
-                <p class="newsContent">大矢さんの論文がPlant Communications誌に掲載されました。</p>
+                <div class="newsMeta">
+                    <span class="newsIcon02">論　文</span>
+                    <time class="newsDate" datetime="2026-01-05">2026.01.05</time>
+                </div>
+                <p class="newsContent">大矢さんの論文が<em>Plant Communications</em>誌に掲載されました。</p>
             </li>
             <li class="newsListItem">
-                <span class="newsIcon02">論　文</span>
-                <time class="newsDate" datetime="2026-11-26">2025.11.26</time>
-                <p class="newsContent">野寄さん、森さんの論文がNature Communications誌に掲載されました。</p>
+                <div class="newsMeta">
+                    <span class="newsIcon02">論　文</span>
+                    <time class="newsDate" datetime="2026-11-26">2025.11.26</time>
+                </div>
+                <p class="newsContent">野寄さん、森さんの論文が<em>Nature Communications</em>誌に掲載されました。</p>
             </li>
         </ul>
     </div>

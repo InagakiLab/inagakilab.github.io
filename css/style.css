@@ -4,7 +4,7 @@
   --main-color: #08a000;
   --main-color-mid: #08a00080;
   --main-color-light: #08a00015;
-
+}
 
 body {
     color: #333333;
@@ -61,16 +61,34 @@ figcaption {
     z-index: 9999; /* 最前面に */
 }
 
-#pageHead #logo {
-    display: block;
-}
-
 #pageHead .inner {
     max-width: 1200px;
+    padding: 0 10px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+#pageHead #logo {
+    display: block;
+}
+
+/* ハンバーガー */
+.menuToggle {
+  display: none;
+  font-size: 40px;
+  width: 50px;
+  height: 50px;
+  color: var(--main-color);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* PCはそのまま */
+#menuWrap {
+  display: block;
 }
 
 #pageHead .headerTop {
@@ -112,23 +130,23 @@ figcaption {
 }
 
 /* グローバルナビ */
-#pageHead .globalNavi {
+.globalNavi {
     padding: 0px;
     width: 630px;
 }
 
-#pageHead .globalNavi ul {
+.globalNavi ul {
     margin: 0;
     padding: 0;
 }
 
-#pageHead .globalNavi ul::after {
+.globalNavi ul::after {
     content: "";
     clear: both;
     display: block;
 }
 
-#pageHead .globalNavi ul li {
+.globalNavi ul li {
     list-style: none;
     width: 126px;
     float: left;
@@ -139,19 +157,19 @@ figcaption {
     font-weight: 1000;
 }
 
-#pageHead .globalNavi ul li:first-child {
+.globalNavi ul li:first-child {
     border-left: none;
 }
 
-#pageHead .globalNavi ul li a {
+.globalNavi ul li a {
     color: var(--main-color);
     text-decoration: none;
     display: block;
     padding: 5px 0;
 }
 
-#pageHead .globalNavi ul li a:hover,
-#pageHead .globalNavi ul li.current a {
+.globalNavi ul li a:hover,
+.globalNavi ul li.current a {
     background-color: var(--main-color-light);
 }
 
@@ -167,6 +185,7 @@ figcaption {
 #pageFoot #pageFootInner {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 #pageFoot #pageFootInner #pageFootContent {
@@ -556,4 +575,87 @@ main {
   border: 0;
   padding: 0;
   margin: -1px;
+}
+
+
+
+/* ===== スマホ対応 ===== */
+@media screen and (max-width: 768px) {
+
+  #pageBody {
+    width: 90%;
+  }
+
+  #pageHead .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* ボタン表示 */
+  .menuToggle {
+    display: block;
+  }
+
+  /* メニュー非表示 */
+  #menuWrap {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background: #f8f8f8ee;
+    border-top: 1px solid #ccc;
+  }
+
+  /* 開いた状態 */
+  #menuWrap.active {
+    display: block;
+  }
+
+  .globalNavi {
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center; /* ナビ全体を中央へ */
+  }
+
+  /* ナビ縦並び */
+  .globalNavi ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .globalNavi ul li {
+    width: 80%;
+    float: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  /* headerTop中央 */
+  .headerTop {
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  .newsListItem {
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+  }
+  
+  .newsMeta {
+    display: flex; /* ラベルと日付を横並びにする */
+    gap: 10px;
+  }
+
+  .newsContent {
+    width: 100%;
+  }
+  .memberList {
+    flex-direction: column;
+  }
+
 }
