@@ -636,12 +636,15 @@ main {
 
   .newsListItem {
     flex-direction: column;
+    gap: 5px;
+    align-items: flex-start; /* 左揃え */
   }
   
   .newsMeta {
-    display: flex;
+    display: flex; /* ラベルと日付を横並びにする */
+    gap: 10px;
   }
-  
+
   .memberList {
     flex-direction: column;
   }
