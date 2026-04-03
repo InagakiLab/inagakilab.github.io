@@ -600,13 +600,19 @@ main {
     top: 80px;
     right: 0;
     width: 100%;
-    background: #eeeeee;
+    background: #eeeeee80;
     border-top: 1px solid #ccc;
   }
 
   /* 開いた状態 */
   #menuWrap.active {
     display: block;
+  }
+
+  .globalNavi {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* ナビ全体を中央へ */
   }
 
   /* ナビ縦並び */
