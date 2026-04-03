@@ -63,6 +63,7 @@ figcaption {
 
 #pageHead .inner {
     max-width: 1200px;
+    padding: 0 10px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -184,6 +185,7 @@ figcaption {
 #pageFoot #pageFootInner {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 #pageFoot #pageFootInner #pageFootContent {
