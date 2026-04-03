@@ -26,5 +26,11 @@
 
     {% include footer.html %}
 
+    <script>
+    document.getElementById("menuToggle").addEventListener("click", function() {
+      document.getElementById("menuWrap").classList.toggle("active");
+    });
+    </script>
+
 </body>
 </html>

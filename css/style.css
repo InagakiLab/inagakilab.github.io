@@ -61,16 +61,30 @@ figcaption {
     z-index: 9999; /* 最前面に */
 }
 
-#pageHead #logo {
-    display: block;
-}
-
 #pageHead .inner {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+#pageHead #logo {
+    display: block;
+}
+
+/* ハンバーガー */
+.menuToggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* PCはそのまま */
+#menuWrap {
+  display: block;
 }
 
 #pageHead .headerTop {
@@ -558,6 +572,8 @@ main {
   margin: -1px;
 }
 
+
+
 /* ===== スマホ対応 ===== */
 @media screen and (max-width: 768px) {
 
@@ -566,16 +582,48 @@ main {
   }
 
   #pageHead .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* ボタン表示 */
+  .menuToggle {
+    display: block;
+  }
+
+  /* メニュー非表示 */
+  #menuWrap {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    background: #ffffff;
+    border-top: 1px solid #ccc;
+  }
+
+  /* 開いた状態 */
+  #menuWrap.active {
+    display: block;
+  }
+
+  /* ナビ縦並び */
+  .globalNavi ul {
+    display: flex;
     flex-direction: column;
   }
 
-  #pageHead .globalNavi ul {
-    flex-direction: column;
-  }
-
-  #pageHead .globalNavi ul li {
+  .globalNavi ul li {
     width: 100%;
     float: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  /* headerTop中央 */
+  .headerTop {
+    justify-content: center;
+    padding: 10px 0;
   }
 
   .newsListItem {
