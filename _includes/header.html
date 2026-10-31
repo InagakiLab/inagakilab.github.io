@@ -14,16 +14,26 @@
                 <a href="https://www.instagram.com/inalab_ut?igsh=aXg0cnh0NDd0N21n" target="_blank" rel="noopener noreferrer" class="instaLink">
                     <img src="{{ '/images/Instagram_Glyph_Gradient.png' | relative_url }}" height="25px" class="instaIcon">
                 </a>
-                <a href="{{ '/' | relative_url }}" class="jpButton">JP</a>
-                <a href="{{ '/en/' | relative_url }}" class="enButton">EN</a>
+
+                {% if page.lang == "en" %}
+                    {% assign jp_url = page.url | remove_first: '/en' %}
+                    {% if jp_url == '' %}{% assign jp_url = '/' %}{% endif %}
+                    <a href="{{ jp_url | relative_url }}" class="jpButton">JP</a>
+                    <a href="{{ page.url | relative_url }}" class="enButton active">EN</a>
+                {% else %}
+                    {% if page.url == '/' %}{% assign en_url = '/en/' %}{% else %}{% assign en_url = '/en' | append: page.url %}{% endif %}
+                    <a href="{{ page.url | relative_url }}" class="jpButton active">JP</a>
+                    <a href="{{ en_url | relative_url }}" class="enButton">EN</a>
+                {% endif %}
             </div>
             <nav class="globalNavi">
+                {% if page.lang == "en" %}{% assign base = '/en' %}{% else %}{% assign base = '' %}{% endif %}
                 <ul>
-                    <li><a href="{{ '/' | relative_url }}">Home</a></li>
-                    <li><a href="{{ '/research' | relative_url }}">Research</a></li>
-                    <li><a href="{{ '/members' | relative_url }}">Members</a></li>
-                    <li><a href="{{ '/publications' | relative_url }}">Publications</a></li>
-                    <li><a href="{{ '/access' | relative_url }}">Access</a></li>
+                    <li><a href="{{ base | append: '/' | relative_url }}">Home</a></li>
+                    <li><a href="{{ base | append: '/research' | relative_url }}">Research</a></li>
+                    <li><a href="{{ base | append: '/members' | relative_url }}">Members</a></li>
+                    <li><a href="{{ base | append: '/publications' | relative_url }}">Publications</a></li>
+                    <li><a href="{{ base | append: '/access' | relative_url }}">Access</a></li>
                 </ul>
             </nav>
         </div>

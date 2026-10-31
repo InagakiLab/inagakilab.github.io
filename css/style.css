@@ -107,26 +107,32 @@ figcaption {
     display: block;
 }
 
-#pageHead .headerTop .jpButton {
+#pageHead .headerTop .jpButton,
+#pageHead .headerTop .enButton {
     width: 40px;
-    margin: 2.5px 0 2.5px auto;
     text-align: center;
-    color: #ffffff;
-    background-color: var(--main-color);
-    border-radius: 6px 0 0 6px; /* 左上 左下 を丸める */
     font-weight: 1000;
     text-decoration: none;
+    /* 既定は非選択（薄い背景） */
+    color: var(--main-color);
+    background-color: var(--main-color-light);
+}
+
+#pageHead .headerTop .jpButton {
+    margin: 2.5px 0 2.5px auto;
+    border-radius: 6px 0 0 6px; /* 左上 左下 を丸める */
 }
 
 #pageHead .headerTop .enButton {
-    width: 40px;
     margin: 2.5px auto 2.5px 0;
-    text-align: center;
-    color: var(--main-color);
-    background-color: var(--main-color-light);
     border-radius: 0 6px 6px 0; /* 右上 右下 を丸める */
-    font-weight: 1000;
-    text-decoration: none;
+}
+
+/* 選択中の言語（濃い背景） */
+#pageHead .headerTop .jpButton.active,
+#pageHead .headerTop .enButton.active {
+    color: #ffffff;
+    background-color: var(--main-color);
 }
 
 /* グローバルナビ */
